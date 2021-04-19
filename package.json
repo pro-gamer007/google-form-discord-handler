@@ -1,0 +1,26 @@
+{
+  "name": "google-form-discord-handler",
+  "version": "1.0.0",
+  "description": "I had to make something for my friend that would take a google form response and send it as a result back to discord.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pro-gamer007/google-form-discord-handler.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pro-gamer007/google-form-discord-handler/issues"
+  },
+  "homepage": "https://github.com/pro-gamer007/google-form-discord-handler#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.24.0",
+    "express": "^4.17.1"
+  }
+}
