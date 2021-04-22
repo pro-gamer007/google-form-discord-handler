@@ -16,9 +16,9 @@ app.get('/', function(req, res) {
 
 app.post('/webhook/forms', function(req, res) {
 	const details = req.body;
-	let message = (`**New Application!**\n**Name**: ${details.name}\n**Tag:** ${details.tag}\n**Application Link:** ${details.appLink}`);
+	let message = (Discord.Util.removeMentions(`**New Application!**\n**Name**: ${details.name}\n**Tag:** ${details.tag}\n**Application Link:** ${details.appLink}`));
 	if (details.downloadLink) {
-		message = (`**New Application!**\n**Name**: ${details.name}\n**Tag:** ${details.tag}\n**Application Link:** ${details.appLink}\n**Download Link:** ${details.downloadLink}`);
+		message = (Discord.Util.removeMentions(`**New Application!**\n**Name**: ${details.name}\n**Tag:** ${details.tag}\n**Application Link:** ${details.appLink}\n**Download Link:** ${details.downloadLink}`));
 	}
 	webhook.send(message);
 	res.send('Done!');
